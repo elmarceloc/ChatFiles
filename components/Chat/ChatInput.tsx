@@ -122,7 +122,7 @@ export const ChatInput: FC<Props> = ({
             onClick={onRegenerate}
           >
             <IconRepeat size={16} className="mb-[2px] inline-block"/>{' '}
-            {t('Regenerate response')}
+            {t('Volver a generar una respuesta')}
           </button>
         )}
 
@@ -141,7 +141,7 @@ export const ChatInput: FC<Props> = ({
                   : 'hidden'
               }`,
             }}
-            placeholder={t('Type a message...') || ''}
+            placeholder={t('Escribe un mensaje...') || ''}
             value={content}
             rows={1}
             onCompositionStart={() => setIsTyping(true)}
@@ -159,18 +159,8 @@ export const ChatInput: FC<Props> = ({
         </div>
       </div>
       <div className="px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
-        <a
-          href="https://github.com/guangzhengli/ChatFiles"
-          target="_blank"
-          rel="noreferrer"
-          className="underline"
-        >
-          ChatFiles
-        </a>
+       
         {' '}
-        {t(
-          "aims to establish embeddings for ChatGPT and facilitate its ability to engage in document-based conversations.",
-        )}
       </div>
     </div>
   );
