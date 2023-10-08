@@ -119,7 +119,7 @@ export const Sidebar: FC<Props> = ({
   }, [searchTerm, conversations]);
 
 
-  return <></>;
+  //return <></>;
   
   return (
     <aside
